@@ -3,31 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hatinuda</title>
-
+    <title>navigation</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="bg-primary">
-      <!--header section-->
-      <header>
-        <a href="#" class="logo">Logo</a>
-        <nav class="navbar">
-          <a href="#home" class="active">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="services.html">Our Services</a>
-          <a href="#contact" class="btn btn-primary-transparent">Contact Us</a>
-        </nav>
-      </header>
-    </div>
-    <div class="bg-primary">
-      <section id="home ">
-        <h3>Creative</h3>
-      </section>
+    <header>
+      <nav>
+        <ul class="sidebar">
+          <li onclick="hideSidebar()">
+            <a href="# "
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="26"
+                viewBox="0 -960 960 960"
+                width="26"
+                fill="#e8eaed"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li><a href="# " class="active">Home</a></li>
+          <li><a href="# ">About us</a></li>
+          <li><a href="# ">Our Services</a></li>
+          <li><a href="# ">Contact us</a></li>
+        </ul>
 
-      <hr />
+        <ul>
+          <a href="#" class="logo">Logo</a>
 
-      <section id="about ">About Us</section>
-    </div>
+          <li class="hideOnMobile"><a href="# " class="active">Home</a></li>
+          <li class="hideOnMobile"><a href="# ">About us</a></li>
+          <li class="hideOnMobile"><a href="# ">Our Services</a></li>
+          <li class="hideOnMobile"><a href="# ">Contact us</a></li>
+          <li class="menu-btn" onclick="showSidebar()">
+            <a href="# "
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="26"
+                viewBox="0 -960 960 960"
+                width="26"
+                fill="#e8eaed"
+              >
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
   </body>
 </html>
