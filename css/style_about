@@ -37,22 +37,15 @@ nav a {
   align-items: center;
   color: rgb(100, 100, 100);
 }
-nav a::before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 0;
-  height: 0.125rem;
-  background: white;
-  transition: 0.5s;
+
+
+nav a:hover {
+  color: rgb(0, 0, 0);
+  
 }
-nav a:hover,
 nav a.active {
-  color: rgb(2, 2, 2);
-}
-nav a:hover:before {
-  width: 100%;
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
 }
 
 .sidebar {
