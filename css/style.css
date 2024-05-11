@@ -37,7 +37,7 @@ nav a {
   align-items: center;
   color: rgb(134, 131, 131);
 }
-nav ul a::before {
+/*nav ul a::before {
   content: "";
   position: absolute;
   top: 70%;
@@ -46,14 +46,18 @@ nav ul a::before {
   height: 0.1rem;
   background: white;
   transition: 0.5s;
+}*/
+nav a:hover {
+  color: white;
+  /* text-decoration: underline;*/
 }
-nav a:hover,
 nav a.active {
   color: white;
+  text-decoration: underline;
 }
-nav ul a:hover::before {
+/*nav ul a:hover::before {
   width: 100%;
-}
+}*/
 .btn {
   background-color: #8f8f9463;
   backdrop-filter: blur(1rem);

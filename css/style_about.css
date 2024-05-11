@@ -31,12 +31,13 @@ nav li {
 }
 nav a {
   height: 100%;
-  padding: 0 1.875rem;
+  padding: 0 2.5rem;
   text-decoration: none;
   display: flex;
   align-items: center;
   color: rgb(100, 100, 100);
 }
+/*
 nav a::before {
   content: "";
   position: absolute;
@@ -46,14 +47,20 @@ nav a::before {
   height: 0.125rem;
   background: white;
   transition: 0.5s;
+}*/
+nav a:hover {
+  color: rgb(0, 0, 0);
+  /* text-decoration: underline;*/
 }
-nav a:hover,
 nav a.active {
-  color: rgb(2, 2, 2);
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
 }
+
+/*
 nav a:hover:before {
   width: 100%;
-}
+}*/
 
 .sidebar {
   position: fixed;
