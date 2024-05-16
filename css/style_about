@@ -31,7 +31,7 @@ nav li {
 }
 nav a {
   height: 100%;
-  padding: 0 1.875rem;
+  padding: 0 2.5rem;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -71,6 +71,15 @@ nav a.active {
   border-radius: 4rem;
   padding: 0.2rem 0rem;
 }
+.btn-sidebar {
+  background-color: #8f8f9463;
+  backdrop-filter: blur(1rem);
+  margin-left: 2.3rem;
+  border-radius: 0.5rem;
+  padding: 0 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+  margin-top: auto;
 .sidebar li {
   width: 100%;
 }
