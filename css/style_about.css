@@ -37,30 +37,13 @@ nav a {
   align-items: center;
   color: rgb(100, 100, 100);
 }
-/*
-nav a::before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 0;
-  height: 0.125rem;
-  background: white;
-  transition: 0.5s;
-}*/
 nav a:hover {
   color: rgb(0, 0, 0);
-  /* text-decoration: underline;*/
 }
 nav a.active {
   color: rgb(0, 0, 0);
   text-decoration: underline;
 }
-
-/*
-nav a:hover:before {
-  width: 100%;
-}*/
 
 .sidebar {
   position: fixed;
@@ -84,6 +67,16 @@ nav a:hover:before {
   margin-right: 3rem;
   border-radius: 4rem;
   padding: 0.2rem 0rem;
+}
+.btn-sidebar {
+  background-color: #8f8f9463;
+  backdrop-filter: blur(1rem);
+  margin-left: 2.3rem;
+  border-radius: 0.5rem;
+  padding: 0 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+  margin-top: auto;
 }
 .sidebar li {
   width: 100%;

@@ -1,0 +1,156 @@
+* {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  --rpx: 100vw / 1920;
+}
+
+.bg-primary {
+  position: relative;
+  width: calc(1920 * var(--rpx));
+  height: calc(1138 * var(--rpx));
+  margin: 0 0 0 0;
+  background: #020202;
+  overflow: hidden;
+}
+.group-2 {
+  position: absolute;
+  width: calc(1611 * var(--rpx));
+  height: calc(902 * var(--rpx));
+  top: calc(101 * var(--rpx));
+  left: 50%;
+  transform: translate(-50.96%, 0);
+  z-index: 1;
+}
+.text-6 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: calc(375 * var(--rpx));
+  top: 0;
+  left: calc(523 * var(--rpx));
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: calc(250 * var(--rpx));
+  font-weight: 600;
+  line-height: calc(375 * var(--rpx));
+  text-align: left;
+  text-transform: capitalize;
+  white-space: nowrap;
+  z-index: 4;
+}
+.text-7 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: calc(375 * var(--rpx));
+  top: calc(260 * var(--rpx));
+  left: 0;
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: calc(250 * var(--rpx));
+  font-weight: 600;
+  line-height: calc(375 * var(--rpx));
+  text-align: left;
+  text-transform: capitalize;
+  white-space: nowrap;
+  z-index: 3;
+}
+.text-8 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: calc(375 * var(--rpx));
+  top: calc(527 * var(--rpx));
+  left: calc(428 * var(--rpx));
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: calc(250 * var(--rpx));
+  font-weight: 600;
+  line-height: calc(375 * var(--rpx));
+  text-align: left;
+  text-transform: capitalize;
+  white-space: nowrap;
+  z-index: 2;
+}
+.pic {
+  position: absolute;
+  width: calc(395 * var(--rpx));
+  height: calc(141 * var(--rpx));
+  top: calc(220 * var(--rpx));
+  left: calc(206 * var(--rpx));
+  background: rgba(217, 217, 217, 0.2) url(./Rectangle_2-removebg-preview.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 17;
+  border-radius: calc(5000 * var(--rpx));
+}
+.text-9 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: calc(438 * var(--rpx));
+  height: calc(120 * var(--rpx));
+  top: calc(489 * var(--rpx));
+  left: calc(1114 * var(--rpx));
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Poppins, var(--default-font-family);
+  font-size: calc(20 * var(--rpx));
+  font-weight: 500;
+  line-height: calc(30 * var(--rpx));
+  text-align: left;
+  text-transform: capitalize;
+  z-index: 18;
+}
+.group-3 {
+  position: absolute;
+  width: calc(212 * var(--rpx));
+  height: calc(212 * var(--rpx));
+  top: calc(710 * var(--rpx));
+  left: calc(243 * var(--rpx));
+  z-index: 19;
+  overflow: hidden;
+}
+.img {
+  position: relative;
+
+  width: calc(119.25 * var(--rpx));
+  height: calc(119.25 * var(--rpx));
+  background-position: center;
+  background-image: url(./Vector.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 20;
+  margin: calc(46.375 * var(--rpx)) 0 0 calc(46.375 * var(--rpx));
+}/*
+<div
+          style="
+            width: calc(212 * var(--rpx));
+            height: calc(212 * var(--rpx));
+            position: absolute;
+            top: calc(710 * var(--rpx));
+            left: calc(243 * var(--rpx));
+            overflow: hidden;
+            z-index: 19;
+          "
+        >
+          <div
+            style="
+              width: calc(119.25 * var(--rpx));
+              height: calc(119.25 * var(--rpx));
+              background-position: center;
+              background-image: url(./assets/images/c8c7f4ea-5e13-4dd9-a6bd-5eeb8af1f480.png);
+              background-size: 100% 100%;
+              background-repeat: no-repeat;
+              position: relative;
+              z-index: 20;
+              margin: calc(46.375 * var(--rpx)) 0 0 calc(46.375 * var(--rpx));
+            "
+          ></div>
+        </div>
