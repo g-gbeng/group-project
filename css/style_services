@@ -92,6 +92,9 @@ nav a.active {
   }
 }
 
+
+
+
 .text-blue {
   color: #2f3193;
 }
