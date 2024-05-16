@@ -91,3 +91,56 @@ nav a.active {
     width: 100%;
   }
 }
+
+.text-blue {
+  color: #2f3193;
+}
+.text-dark {
+  color: #000000b2;
+}
+.text-gray {
+  color: #999999;
+}
+.bg-lightblue {
+  background-color: #2f31930d;
+}
+
+header {
+  padding: 1rem 3.5rem;
+}
+
+@media (min-width:1150px)
+ {
+    .img-right{
+       margin-left: 3rem;
+      }
+  }
+  @media (min-width:991px)
+ {
+    .img-right{
+       margin-left: 2rem;
+      }
+  }
+
+  @media (max-width:990px)
+ {
+    .img-right{
+       margin-left: .1rem;
+       
+      }
+  }
+  @media (max-width:768px){
+    .right{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+  @media (max-width:576px)
+  {
+     .img-right{
+       width: 302px;
+       }
+       #img-left{
+        width: 302px;
+       }
+   }
