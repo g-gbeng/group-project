@@ -77,5 +77,52 @@ body{
     display: flex;
     align-content: center;
 }
+.right {
+  margin-left: 100px;
+  padding-top: 25px;
+}
+.third-section {
+  background: #0000000d;
+  /* border: 1px solid darkblue; */
+  height: 660px;
+  /* display: flex; */
+}
+.team {
+  width: 200px;
+  height: 230px;
+  margin-bottom: 0px;
+}
+.one {
+  /* border: 1px solid darksalmon; */
+  width: 235px;
+  height: 330px;
+  display: flex;
+}
+.top {
+  display: flex;
+}
+.left-part {
+  margin-right: 25px;
+}
+.right-part {
+  padding-top: 50px;
+}
+.left-image {
+  width: 600px;
+  height: 350px;
+}
+.right-image {
+  width: 560px;
+  height: 350px;
+}
+.sec-1{
+  display: flex;
+}
+.last-image{
+  margin-top: 50px;
+  width: 1185px;
+  height: 550px;
+}
+
 
 
