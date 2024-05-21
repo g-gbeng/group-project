@@ -79,7 +79,7 @@ nav a.active {
   text-decoration: underline;
 }
 
-.sidebar {
+.sidebar1 {
   position: fixed;
   top: 0;
   right: 0;
@@ -94,7 +94,8 @@ nav a.active {
   align-items: flex-start;
   justify-content: flex-start;
 }
-.btn {
+
+.btn-1 {
   background-color: #17196a;
   backdrop-filter: blur(1rem);
   margin-left: 2rem;
@@ -103,14 +104,15 @@ nav a.active {
   padding: 0.2rem 0rem;
 }
 .btn-sidebar {
-  background-color: #8f8f9463;
+  border: none;
+  border-radius: 5%;
   backdrop-filter: blur(1rem);
-  margin-left: 2.3rem;
-  border-radius: 0.5rem;
-  padding: 0 2rem;
-  padding-left: 1.5rem;
-  padding-right: 1rem;
+  width: 200px;
+  padding: 6px 2px 6px 2px;
+  background: #8f8f9463;
+  display: flex;
   margin-top: auto;
+  justify-content: center;
 }
 .sidebar li {
   width: 100%;
