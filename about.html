@@ -1,167 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style_about.css" />
     <link rel="stylesheet" href="index.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <title>About Us</title>
-</head>
-<style>
+  </head>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+    footer {
+      background-color: #17196a;
+      padding: 30px;
+    }
+    .footer-text {
+      font-size: 10px;
+    }
+    .footer-img {
+      margin: 0 10px 10px 10px;
+    }
+    .main-text {
+      background-color: #17196a;
+      padding: 80px;
+      margin-top: 60px;
+    }
+    .contact-us {
+      background-color: white;
+      color: black;
+      margin-left: 200px;
+      margin-top: 150px;
+      margin-bottom: auto;
+    }
 
-body{
-    font-family: "Poppins", sans-serif;
-}
-footer {
-        background-color: #17196a;
-        padding: 30px;
+    .text-gray {
+      color: rgb(178, 176, 176);
     }
-.footer-text {
-        font-size: 10px;
+    .text-blue {
+      color: #17196a;
     }
-.footer-img {
-        margin: 0 10px 10px 10px;
-    }
-.main-text {
-        background-color: #17196a;
-        padding: 80px;
-        margin-top: 60px
-    }
-.contact-us{
-    background-color: white;
-    color: black;
-    margin-left: 200px;
-    margin-top: 150px;
-    margin-bottom: auto;}
-
-.text-gray{
-    color: rgb(178, 176, 176);
-}
-.text-blue{
-    color: #17196A;
-}
 
     nav {
-  background-color: #f8f8f8;
-  box-shadow: 0.188rem 0.188rem 0.313rem rgba(0, 0, 0, 0.1);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
+      background-color: #f8f8f8;
+      box-shadow: 0.188rem 0.188rem 0.313rem rgba(0, 0, 0, 0.1);
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
 
-.logo {
-  margin-right: auto;
-  font-size: 1.875rem;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  font-weight: 600;
-}
-nav ul {
-  width: 100%;
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-nav li {
-  height: 3.125rem;
-}
-nav a {
-  height: 100%;
-  padding: 0 2.5rem;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  color: rgb(100, 100, 100);
-}
+    .logo {
+      margin-right: auto;
+      font-size: 1.875rem;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav ul {
+      width: 100%;
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    nav li {
+      height: 3.125rem;
+    }
+    nav a {
+      height: 100%;
+      padding: 0 2.5rem;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: rgb(100, 100, 100);
+    }
 
+    nav a:hover {
+      color: rgb(0, 0, 0);
+    }
+    nav a.active {
+      color: rgb(0, 0, 0);
+      text-decoration: underline;
+    }
 
-nav a:hover {
-  color: rgb(0, 0, 0);
-  
-}
-nav a.active {
-  color: rgb(0, 0, 0);
-  text-decoration: underline;
-}
-
-.sidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 15.625rem;
-  z-index: 999;
-  background-color: #17196a;
-  backdrop-filter: blur(0.625rem);
-  box-shadow: -0.625rem 0 0.625rem rgba(0, 0, 0, 0.1);
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.btn {
-  background-color: #17196a;
-  backdrop-filter: blur(1rem);
-  margin-left: 2rem;
-  margin-right: 3rem;
-  border-radius: 4rem;
-  padding: 0.2rem 0rem;
-}
-.btn-sidebar {
-  background-color: #8f8f9463;
-  backdrop-filter: blur(1rem);
-  margin-left: 2.3rem;
-  border-radius: 0.5rem;
-  padding: 0 2rem;
-  padding-left: 1.5rem;
-  padding-right: 1rem;
-  margin-top: auto;
-}
-.sidebar li {
-  width: 100%;
-}
-.sidebar a {
-  width: 100%;
-}
-.menu-btn {
-  display: none;
-}
-@media (max-width: 50rem) {
-  .hideOnMobile {
-    display: none;
-  }
-  .menu-btn {
-    display: block;
-  }
-}
-@media (max-width: 25rem) {
-  .sidebar {
-    width: 100%;
-  }
-}
-</style>
-<body>
-<!--header section start-->
+    .sidebar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 15.625rem;
+      z-index: 999;
+      background-color: #17196a;
+      backdrop-filter: blur(0.625rem);
+      box-shadow: -0.625rem 0 0.625rem rgba(0, 0, 0, 0.1);
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .btn {
+      background-color: #17196a;
+      backdrop-filter: blur(1rem);
+      margin-left: 2rem;
+      margin-right: 3rem;
+      border-radius: 4rem;
+      padding: 0.2rem 0rem;
+    }
+    .btn-sidebar {
+      background-color: #8f8f9463;
+      backdrop-filter: blur(1rem);
+      margin-left: 2.3rem;
+      border-radius: 0.5rem;
+      padding: 0 2rem;
+      padding-left: 1.5rem;
+      padding-right: 1rem;
+      margin-top: auto;
+    }
+    .sidebar li {
+      width: 100%;
+    }
+    .sidebar a {
+      width: 100%;
+    }
+    .menu-btn {
+      display: none;
+    }
+    @media (max-width: 50rem) {
+      .hideOnMobile {
+        display: none;
+      }
+      .menu-btn {
+        display: block;
+      }
+    }
+    @media (max-width: 25rem) {
+      .sidebar {
+        width: 100%;
+      }
+    }
+  </style>
+  <body>
+    <!--header section start-->
     <header>
       <nav>
         <ul class="sidebar">
           <li onclick="hideSidebar()">
             <a href="# ">
-                <svg
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="26"
                 viewBox="0 -960 960 960"
                 width="26"
-                fill="black" >
+                fill="black"
+              >
                 <path
-                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                />
               </svg>
             </a>
           </li>
@@ -189,75 +197,76 @@ nav a.active {
             </li>
           </div>
           <li class="menu-btn" onclick="showSidebar()">
-            <a href="# "><img src="./images/jam_menu2.png" alt="" />
-            </a>
+            <a href="# "><img src="./images/jam_menu2.png" alt="" /> </a>
           </li>
         </ul>
       </nav>
     </header>
     <!--header section end-->
-    
-    <div class="container">
 
+    <div class="container"></div>
+
+    <div class="left-margin">
+      <p class="text-color p-margin">About Us</p>
+      <h2 class="head-margin h-font">
+        We Always Priorities Quality And
+        <br />
+        <span class="span-color"> Customer Satisfaction </span>
+      </h2>
     </div>
-
-          <div class="left-margin">
-        <p class="text-color p-margin">About Us</p>
-        <h2 class="head-margin h-font">
-          We Always Priorities Quality And
-          <br />
-          <span class="span-color"> Customer Satisfaction </span>
-        </h2>
+    <div style="border: 1px solid red; height: 500px; margin: 0">
+      <div style="display: flex">
+        <div class="cover-image"></div>
+        <div class="bg-color bg-length"></div>
       </div>
-      <div style="border: 1px solid red; height: 500px; margin: 0">
-        <div style="display: flex">
-          <div class="cover-image"></div>
-          <div class="bg-color bg-length"></div>
+      <div
+        style="
+          padding: 100px 25px;
+          width: 400px;
+          height: 400px;
+          background-color: white;
+          /* border: 1px solid purple; */
+          top: 315px;
+          left: 950px;
+          position: absolute;
+        "
+      >
+        <div class="centre">
+          <h3 style="margin: 0px 0px 20px 0px">Who We Are</h3>
+          <p class="span-color" style="margin: 0">
+            Hatinuda network is a leading creative agency that specializes in
+            using creativity, innovation, and technology to influence and
+            transform culture on a global scale. We pride ourselves on creating
+            unique value for our clients, differentiating them from their
+            competitors through our creative solutions.
+          </p>
         </div>
-        <div
-          style="
-            padding: 100px 25px;
-            width: 400px;
-            height: 400px;
-            background-color: white;
-            /* border: 1px solid purple; */
-            top: 315px;
-            left: 950px;
-            position: absolute;
-          "
-        >
-          <div class="centre">
-            <h3 style="margin: 0px 0px 20px 0px">Who We Are</h3>
-            <p class="span-color" style="margin: 0">
-              Hatinuda network is a leading creative agency that specializes in
-              using creativity, innovation, and technology to influence and
-              transform culture on a global scale. We pride ourselves on
-              creating unique value for our clients, differentiating them from
-              their competitors through our creative solutions.
+      </div>
+      <div style="border: 1px solid darkblue; height: 400px; margin: 0">
+        <div class="left">
+          <div class="left-header">
+            <h2 class="left-margin h-font">
+              What We Stand For
+              <br />
+              And
+              <span class="span-color">Plan To Achieve</span>
+            </h2>
+          </div>
+          <div class="left-info left-margin">
+            <img
+              src="img/9c23e143de582d5e7cc5e1c2fd07ce5f.png"
+              alt="md picture"
+              class="md-logo"
+            />
+            <p style="font-weight: lighter; padding-left: 22px">
+              <b>Cornelius Ayanfe Adetutu</b>
+              <br />
+              CEO, MD
             </p>
           </div>
         </div>
-        <div style="border: 1px solid darkblue; height: 400px; margin: 0">
-          <div class="left">
-            <div class="left-header">
-              <h2 class="left-margin h-font">
-                What We Stand For
-                <br />
-                And
-                <span class="span-color">Plan To Achieve</span>
-              </h2>
-            </div>
-            <div class="left-info left-margin">
-                <img src="img/9c23e143de582d5e7cc5e1c2fd07ce5f.png" alt="md picture" class="md-logo">
-                <p style="font-weight: lighter; padding-left: 22px;">
-                    <b>Cornelius Ayanfe Adetutu</b>
-                    <br>
-                    CEO, MD
-                </p>
-            </div>
-          </div>
-          <div class="right">
-             <p class="span-color">
+        <div class="right">
+          <p class="span-color">
             Hatinuda Network stands as a testament to the boundless <br />
             potential that resides within the heart of Nigeria's creative
             <br />
@@ -278,206 +287,208 @@ nav a.active {
             <br />
             mark on the cultural fabric of Africa and beyond.
           </p>
-          </div>
         </div>
       </div>
+    </div>
     <div class="third-section">
-        <h2 class="left-margin h-font">
-          We Work With Only The
-          <br />
-          <span class="span-color">Best Team & Leads</span>
-        </h2>
-        <div>
-          <div class="one left-margin">
-            <div class="images">
-              <img
-                class="team"
-                src="img/cornelius ayanfe adetutu.png"
-                alt="cornelius ayanfe adetutu"
-              />
-              <p style="margin-top: 0px">
-                Cornelius Ayanfe
-                <br />
-                Adetutu
-                <br />
-                <span class="span-color">CEO</span>
-              </p>
-            </div>
-            <div style="margin: 0px 0px 0px 105px">
-              <img
-                class="team"
-                src="img/adewale inioluwa.png"
-                alt="adewale inioluwa"
-              />
-              <p style="margin-top: 0px">
-                Adewale Inioluwa
-                <br />
-                <span class="span-color">Copywriting/Project Manager</span>
-              </p>
-            </div>
-            <div style="margin: 0px 0px 0px 105px">
-              <img class="team" src="img/jegede toye.png" alt="jegede toye" />
-              <p style="margin-top: 0px">
-                Jegede Toye
-                <br />
-                <span class="span-color">Graphic Designer</span>
-              </p>
-            </div>
-            <div style="margin: 0px 0px 0px 105px">
-              <img
-                class="team"
-                src="img/favour okunola.png"
-                alt="favour okunola"
-              />
-              <p style="margin-top: 0px">
-                Favour Okunola
-                <br />
-                <span class="span-color">Content Writer</span>
-              </p>
-            </div>
+      <h2 class="left-margin h-font">
+        We Work With Only The
+        <br />
+        <span class="span-color">Best Team & Leads</span>
+      </h2>
+      <div>
+        <div class="one left-margin">
+          <div class="images">
+            <img
+              class="team"
+              src="img/cornelius ayanfe adetutu.png"
+              alt="cornelius ayanfe adetutu"
+            />
+            <p style="margin-top: 0px">
+              Cornelius Ayanfe
+              <br />
+              Adetutu
+              <br />
+              <span class="span-color">CEO</span>
+            </p>
           </div>
+          <div style="margin: 0px 0px 0px 105px">
+            <img
+              class="team"
+              src="img/adewale inioluwa.png"
+              alt="adewale inioluwa"
+            />
+            <p style="margin-top: 0px">
+              Adewale Inioluwa
+              <br />
+              <span class="span-color">Copywriting/Project Manager</span>
+            </p>
+          </div>
+          <div style="margin: 0px 0px 0px 105px">
+            <img class="team" src="img/jegede toye.png" alt="jegede toye" />
+            <p style="margin-top: 0px">
+              Jegede Toye
+              <br />
+              <span class="span-color">Graphic Designer</span>
+            </p>
+          </div>
+          <div style="margin: 0px 0px 0px 105px">
+            <img
+              class="team"
+              src="img/favour okunola.png"
+              alt="favour okunola"
+            />
+            <p style="margin-top: 0px">
+              Favour Okunola
+              <br />
+              <span class="span-color">Content Writer</span>
+            </p>
+          </div>
+        </div>
+        <p class="span-color left-margin">
+          At Hatinuda Network, we have assembled a team of remarkably talented
+          individuals <br />
+          who possess an unwavering passion for their craft. TheTeam share a
+          common purpose— <br />to create awe-inspiring experiences that
+          resonate deeply with audiences and leave a <br />
+          lasting impression.
+        </p>
+      </div>
+    </div>
+    <div class="fourth-section">
+      <div class="top">
+        <div class="left-part">
+          <h2 class="left-margin h-font">
+            Our Goals Helps Drive
+            <br />
+            <span class="span-color">Our Mission And Vision</span>
+          </h2>
+          <div class="bg-color" style="width: 635px; height: 40px"></div>
           <p class="span-color left-margin">
-            At Hatinuda Network, we have assembled a team of remarkably talented
-            individuals <br />
-            who possess an unwavering passion for their craft. TheTeam share a
-            common purpose— <br />to create awe-inspiring experiences that
-            resonate deeply with audiences and leave a <br />
-            lasting impression.
+            Our vision is to create a unique value for our clients that will
+            <br />
+            differentiate them from their competitors
+          </p>
+          <div class="left-margin">
+            <img class="left-image" src="img/left.png" alt="handshake" />
+          </div>
+        </div>
+        <div class="right-part">
+          <img class="right-image" src="img/right.png" alt="mahjong" />
+          <p class="span-color">
+            Our mission at Hatinuda Network is to use technology, innovation,
+            and <br />
+            creativity to influence and transform cultures all around the world
           </p>
         </div>
       </div>
-      <div class="fourth-section">
-        <div class="top">
-          <div class="left-part">
-            <h2 class="left-margin h-font">
-              Our Goals Helps Drive
-              <br />
-              <span class="span-color">Our Mission And Vision</span>
-            </h2>
-            <div class="bg-color" style="width: 635px; height: 40px"></div>
-            <p class="span-color left-margin">
-              Our vision is to create a unique value for our clients that will
-              <br />
-              differentiate them from their competitors
-            </p>
-            <div class="left-margin">
-              <img class="left-image" src="img/left.png" alt="handshake" />
-            </div>
-          </div>
-          <div class="right-part">
-            <img class="right-image" src="img/right.png" alt="mahjong" />
+      <div class="bottom">
+        <div class="sec-1 left-margin">
+          <div>
+            <h2>01</h2>
             <p class="span-color">
-              Our mission at Hatinuda Network is to use technology, innovation,
-              and <br />
-              creativity to influence and transform cultures all around the
-              world
+              Deliver Exceptional Creativity: Create <br />
+              visually stunning, thought-provoking, and <br />
+              impactful creative works that captivate <br />
+              audiences, evoke emotions, and leave a <br />
+              lasting impression.
             </p>
           </div>
-        </div>
-        <div class="bottom">
-          <div class="sec-1 left-margin">
-            <div>
-              <h2>01</h2>
-              <p class="span-color">
-                Deliver Exceptional Creativity: Create <br />
-                visually stunning, thought-provoking, and <br />
-                impactful creative works that captivate <br />
-                audiences, evoke emotions, and leave a <br />
-                lasting impression.
-              </p>
-            </div>
-            <div style="margin: 0px 0px 0px 100px">
-              <h2>02</h2>
-              <p class="span-color">
-                Drive Innovation: Foster a culture of <br />
-                innovation within the creative industry, <br />
-                exploring new technologies, techniques, <br />
-                and trends to push the boundaries of <br />
-                creativity and stay at the forefront of the <br />
-                industry.
-              </p>
-            </div>
-            <div style="margin: 0px 0px 0px 100px">
-              <h3>03</h3>
-              <p class="span-color">
-                Provide Strategic Solutions: Collaborate <br />
-                closely with clients to understand their <br />
-                unique goals and challenges, and deliver <br />
-                tailor-made creative solutions that drive <br />
-                tangible results and contribute to their <br />
-                overall success.
-              </p>
-            </div>
+          <div style="margin: 0px 0px 0px 100px">
+            <h2>02</h2>
+            <p class="span-color">
+              Drive Innovation: Foster a culture of <br />
+              innovation within the creative industry, <br />
+              exploring new technologies, techniques, <br />
+              and trends to push the boundaries of <br />
+              creativity and stay at the forefront of the <br />
+              industry.
+            </p>
           </div>
-        </div>
-        <div class="left-margin">
-          <img class="last-image" src="img/bottom.png" alt="abstract">
+          <div style="margin: 0px 0px 0px 100px">
+            <h3>03</h3>
+            <p class="span-color">
+              Provide Strategic Solutions: Collaborate <br />
+              closely with clients to understand their <br />
+              unique goals and challenges, and deliver <br />
+              tailor-made creative solutions that drive <br />
+              tangible results and contribute to their <br />
+              overall success.
+            </p>
+          </div>
         </div>
       </div>
-      <br>
-
- 
-
+      <div class="left-margin">
+        <img class="last-image" src="img/bottom.png" alt="abstract" />
+      </div>
+    </div>
+    <br />
 
     <div class="row">
-        <div class="col-md-8">
-            <div class="contact-us">
-                <span class="text-blue"> Contact Us</span>
-                <h1>Let Work <br>
-                    <span class="text-gray"> Together</span>
-                </h1>
-                <div class="text-gray">
-                    <p><i class="bi bi-envelope"></i> hatinudanetwork@Gmail.Com</p>
-                    <p><i class="bi bi-instagram"></i> @hatinuda</p>
-                    <p> <i class="bi bi-telephone-fill"></i> +234 8145 577 1499</p>
-                </div>
-            </div>
-
+      <div class="col-md-8">
+        <div class="contact-us">
+          <span class="text-blue"> Contact Us</span>
+          <h1>
+            Let Work <br />
+            <span class="text-gray"> Together</span>
+          </h1>
+          <div class="text-gray">
+            <p><i class="bi bi-envelope"></i> hatinudanetwork@Gmail.Com</p>
+            <p><i class="bi bi-instagram"></i> @hatinuda</p>
+            <p><i class="bi bi-telephone-fill"></i> +234 8145 577 1499</p>
+          </div>
         </div>
-        <div class="col-md-4">
-            <img src="images/Rectangle 8.jpg" class="img-fluid" alt="Image">
-        </div>
+      </div>
+      <div class="col-md-4">
+        <img src="images/Rectangle 8.jpg" class="img-fluid" alt="Image" />
+      </div>
     </div>
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class=" text-md-left text-gray">
-                        <b>Logo</b>
-                        <p> Hatinuda Is A Creative Agency That Provides The Best Specialized Digital Creative Solution
-                            In
-                            Nigeria To Help Brands Achieve Their Full Potential</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="text-center text-gray">
-                        <ul class="list-unstyled">
-                            <li><a href="#"><span>Home</span></a></li>
-                            <li>About Us</li>
-                            <li>Our Services</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="text-center text-gray">
-                        <ul class="list-unstyled">
-                            <li><a href="#"><span>Contact Us</span></a></li>
-                            <li>Gmail</li>
-                            <li>Instagram</li>
-                            <li>Call</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="text-md-left text-gray">
+              <b>Logo</b>
+              <p>
+                Hatinuda Is A Creative Agency That Provides The Best Specialized
+                Digital Creative Solution In Nigeria To Help Brands Achieve
+                Their Full Potential
+              </p>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="text-center text-gray footer-text">
-                        &copy; 2024 Hatinuda, All rights reserved.
-                    </div>
-                </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center text-gray">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#"><span>Home</span></a>
+                </li>
+                <li>About Us</li>
+                <li>Our Services</li>
+              </ul>
             </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center text-gray">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#"><span>Contact Us</span></a>
+                </li>
+                <li>Gmail</li>
+                <li>Instagram</li>
+                <li>Call</li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-center text-gray footer-text">
+              &copy; 2024 Hatinuda, All rights reserved.
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- java script start-->
     <script>
@@ -491,13 +502,6 @@ nav a.active {
       }
     </script>
 
-
     <!--java script end-->
-
-       
-        
-
-
-</body>
-
+  </body>
 </html>
