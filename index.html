@@ -1,262 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="./css/style.css" />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>HATINUDA</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul class="sidebar">
-          <li onclick="hideSidebar()">
-            <a href="#" class="close">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="26"
-                viewBox="0 -960 960 960"
-                width="26"
-                fill="#e8eaed"
-              >
-                <path
-                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-                />
-              </svg>
-            </a>
-          </li>
+</head>
+<style>
+body{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.text-blue {
+  color: #2f3193;
+}
+.text-dark {
+  color: #000000b2;
+}
+.text-gray{
+  color: #999999;
+}
+.text-white{
+  color: #fff;
+}
+.bg-lightblue {
+  background-color: #2f31930d;
+}
+.bg-blue{
+  background-color: #17196a;
+}
 
-          <li><a href="index.html " class="active">Home</a></li>
-          <li><a href="about.html">About us</a></li>
-          <li><a href="services.html">Our Services</a></li>
-          <div class="btn-sidebar btn-sidebar">
-            <li><a href="#contact " ; style="color: white">Contact us</a></li>
-          </div>
-        </ul>
 
-        <ul>
-          <a href="#" class="logo">Logo</a>
 
-          <li class="hideOnMobile">
-            <a href="index.html " class="active">Home</a>
-          </li>
-          <li class="hideOnMobile"><a href="about.html">About us</a></li>
-          <li class="hideOnMobile"><a href="services.html">Our Services</a></li>
-          <div class="btn-1 btn-primary-transparent">
-            <li class="hideOnMobile">
-              <a href="#contact" ; style="color: white">Contact Us</a>
-            </li>
-          </div>
 
-          <li class="menu-btn" onclick="showSidebar()">
-            <a href="# "><img src="./images/jam_menu.png" alt="" /> </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+.line{
+  background-color: #2F3193;
+  margin-bottom: 2rem;
+}
+#about{
+  margin-left: 4.8rem;
+}
+@media(max-width:715px){
+  .about{
+    display: flex;
+    flex-direction: column;
+}
+#about{
+  margin-left:2rem ;
+  width: 60%;
+}
+.hatinuda{
+  width: 220%;
+  margin-left:2rem;
+}
+#learn{
+  margin-left:2rem;
+}
+.hati-below{
+  display: flex;
+  flex-direction: column-reverse;
+}
+}
+@media(max-width:577px){
+  #about{
+    margin-left:2rem ;
+    width: 80%;
+  }
+  .hatinuda{
+    width: 100%;
+  }
+}
 
-    <div class="main-container">
-      <div class="frame">
-        <div class="group">
-          <span class="creative">creative </span>
-          <span class="digital"> digital </span>
-          <span class="agency"> agency</span>
-        </div>
-        <div class="rectangle-img"></div>
-        <span class="creative-solution-nigeria"
-          >hatinuda is a creative agency to provides the best specializes
-          digital creative solution in Nigeria to helps brands achieve their
-          full potential.</span
-        >
-        <div class="arrow"><div class="vector"></div></div>
-      </div>
-    </div>
+ 
+ 
+  a{
+    color: #999999 ;
+  }
+  #contact-us{
+    border-radius: 20px;
+    background-color: #2F3193;
+    ;
+  } 
+.ml{
+ margin-left: 5rem;
+}
+  
 
-    <div class="line">
-      <br />
+.con-text{
+  padding-top: 2.5rem;
+  margin-left: 2rem;
+}
+#work{
+  margin-top: 1.3rem;
+}
+@media(min-width:840px){
+  .h1{
+    display: flex;
+    flex-direction: column;
+  }
+}
+  @media(max-width:579px){
+    .con-img{
+      width: 350px;
+    }
+  }
+  footer {
+    background-color: #17196a;
+    padding: 30px;
+    
+  }
+  @media (max-width:576px){
+    .footer{
+      display: flex;
+      flex-direction: column;
+    }
+    .list-unstyled{
+      width: 50%;
+      margin-left: 140%;
+    }
+  }
+</style>
 
-      <br />
-    </div>
 
-    <div class="main-div">
-      <div class="col1">
-        <h6>About Us</h6>
-        <p>
-          We Always Priorities <span>Quality</span> And
-          <span>Customer</span> Satisfaction
-        </p>
-      </div>
-      <div class="col2">
-        <p>
-          HATINUDA NETWORK IS A LEADING CREATIVE AGENCY THAT SPECIALIZES IN
-          USING CREATIVITY, INNOVATION, AND TECHNOLOGY TO INFLUENCE AND
-          TRANSFORM CULTURE ON A GLOBAL SCALE. WE PRIDE OURSELVES ON CREATING
-          UNIQUE VALUE FOR OUR CLIENTS, DIFFERENTIATING THEM FROM THEIR
-          COMPETITORS THROUGH OUR CREATIVE SOLUTIONS.
-        </p>
-        <a href="about.html"
-          >Learn more
-          <img
-            style="height: 15px; padding-top: 1px"
-            src="./images/solar_arrow-right-up-broken.png"
-            alt=""
-          />
-        </a>
-      </div>
-    </div>
-
-    <div class="about-img">
-      <img src="./images/Rectangle 3.png" alt="" />
-    </div>
-
-    <div class="main-div">
-      <div class="col2">
-        <p>
-          HATINUDA NETWORK IS A LEADING CREATIVE AGENCY THAT SPECIALIZES IN
-          USING CREATIVITY, INNOVATION, AND TECHNOLOGY TO INFLUENCE AND
-          TRANSFORM CULTURE ON A GLOBAL SCALE. WE PRIDE OURSELVES ON CREATING
-          UNIQUE VALUE FOR OUR CLIENTS, DIFFERENTIATING THEM FROM THEIR
-          COMPETITORS THROUGH OUR CREATIVE SOLUTIONS.
-        </p>
-        <a href="about.html"
-          >Learn more
-          <img
-            style="height: 15px; padding-top: 1px"
-            src="./images/solar_arrow-right-up-broken.png"
-            alt=""
-          />
-        </a>
-      </div>
-      <div class="col3">
-        <h6>Services</h6>
-        <p>Some of The Projects <span>We Have Done</span></p>
-      </div>
-    </div>
-
+<body>
+  <nav class="navbar navbar-expand-lg bg-blue">
     <div class="container">
+      <a class="navbar-brand text-white fw-bold fs-4" href="#">Logo</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i><img src="jam_menu.png" alt=""></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a
+            class="nav-link active text-white"
+            aria-current="page"
+            href="home.html"
+            >Home</a
+          >
+          <a class="nav-link text-white ms-2" href="home.html#about"
+            >About Us</a
+          >
+          <a class="nav-link text-gray ms-2" href="services.html"
+            >Our Services</a
+          >
+          <a
+            class="nav-link text-white px-4 ms-2"
+            href="home.html#contact"
+            id="contact-us"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="bg-blue py-5">
+       <div class="container">
+          <div class="row">
+             <div class="col-3">
+               <img src="Rectangle 2.png" class="img-fluid py-5" alt="" />
+             </div>
+             <div class="text-white col-6">
+               <h1 class="fw-bold head-text">Creative
+                </h1> 
+             </div>
+           <div>
+        </div>
+
+            <div class="container digital">
+               </div class="row">
+                   <h1 class="text-white fw-bold head-text col-4">Digital </h1>
+                   <div class="col-2"></div>
+                   <span class="text-white col-3 py-5" >
+                     hatinuda is a creative agency to provides the best specializes digital creative solution in Nigeria to helps brands   achieve their full potential.</span>
+                 </div>
+              </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="img-fluid px-5 col-2">
+                <img src="Vector.png" alt="">
+              </div>
+              <div class="col-5">
+                <h1 class="text-white fw-bold head-text ms-5">Agency</h1>
+              </div>
+            </div>
+          </div>
+
+
+
+          
+    </div>
+    
+  
+  <div class="line">
+    <br />
+  </div>
+  <div class="container-fluid ">
+    <div class="row about">
+      <div class="col-5 " id="about">
+        <h6 class="text-blue fw-bold">About Us</h6>
+        <p class="text-dark fw-bold  fs-1">
+          We Always Priorities <span class="text-gray">Quality</span> And
+          <span class="text-gray">Customer</span> <br />
+          Satisfaction
+        </p>
+      </div>
+      <div class="col-5 py-3 text-gray ">
+        <p class="fs-6 hatinuda">
+          HATINUDA NETWORK IS A LEADING CREATIVE AGENCY THAT SPECIALIZES IN
+          USING CREATIVITY, INNOVATION, AND TECHNOLOGY TO INFLUENCE AND
+          TRANSFORM CULTURE ON A GLOBAL SCALE. WE PRIDE OURSELVES ON CREATING
+          UNIQUE VALUE FOR OUR CLIENTS, DIFFERENTIATING THEM FROM THEIR
+          COMPETITORS THROUGH OUR CREATIVE SOLUTIONS.
+        </p>
+        <a href="about.html" id="learn"> Learn more <img src="solar_arrow-right-up-broken.png" alt=""> </a>
+      </div>
+    </div>
+
+    <div class="row py-5">
+      <img src="Rectangle 3.png" alt="" />
+    </div>
+
+  <div class="container">
+    <div class="row hati-below">
+       <div class="col-5 py-3 text-gray">
+        <p class="fs-6 hatinuda">
+          HATINUDA NETWORK IS A LEADING CREATIVE AGENCY THAT SPECIALIZES IN
+          USING CREATIVITY, INNOVATION, AND TECHNOLOGY TO INFLUENCE AND
+          TRANSFORM CULTURE ON A GLOBAL SCALE. WE PRIDE OURSELVES ON CREATING
+          UNIQUE VALUE FOR OUR CLIENTS, DIFFERENTIATING THEM FROM THEIR
+          COMPETITORS THROUGH OUR CREATIVE SOLUTIONS.
+        </p>
+        <a href="about.html" id="learn"> Learn more <img src="solar_arrow-right-up-broken.png" alt=""> </a>
+      </div>
+
+      <div class="col-5 ms-auto" id="about">
+        <h6 class="text-blue fw-bold text-end">Services</h6>
+        <p class="text-dark fw-bold fs-1">
+          Some Of The Projects 
+        </p>
+        <p class="text-gray fw-bold fs-1 text-sm-end ms-5 ">We Have Done</p>
+           
+      </div>
+     
+    </div>
+  </div>
+    
+    <div class="row">
+      <div class="text-white bg-blue px-4">
+        <h3 class="fw-bold fs-1 col-10 py-5 ml">
+          "Our Agency Is Founded On The Principle Of Authenticity, Originality
+          And A Deep Understanding Of Our Clients' Unique Needs. We Are
+          Committed To Providing Creative Solutions That Not Only Captivate
+          Audiences But Also Leave An Indelible Mark On The Cultural Fabric Of
+          Africa And Beyond. "
+        </h3>
+
+        <h6 class="ml fs-6">Cornelius Ayanfe Adetutu</h6>
+        <p class="ml fs-6">CEO, MD</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="line">
+        <br />
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-sm-6 con-text">
+        <span class="text-blue fw-bold"> Contact Us</span>
+        <h1 class="h1" id="work">
+          Let Work
+          <span class="text-gray"> Together</span>
+        </h1>
+        <div class="text-gray">
+          <p><i class="bi bi-envelope"></i> hatinudanetwork@Gmail.Com</p>
+          <p><i class="bi bi-instagram"></i> @hatinuda</p>
+          <p><i class="bi bi-telephone-fill"></i> +234 8145 577 1499</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-5">
+        <img src="contact.png" class="img-fluid con-img" alt="Image" />
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container-lg">
+      <div class="row footer">
+        <div class="col-lg-6 col-12 col-md-6 col-sm-6">
+          <div class="text-md-left">
+            <h5 class="text-white">Logo</h5>
+            <p class="text-gray">
+              Hatinuda Is A Creative Agency That Provides The Best Specialized
+              Digital Creative Solution In Nigeria To Help Brands Achieve
+              Their Full Potential
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-3 ms-lg-auto ms-md-auto">
+          <div class="text-center text-gray">
+            <ul class="list-unstyled">
+              <li>
+                <a href="home.html" class="text-white fs-6 fw-bold nav-link"
+                  ><span>Home</span></a
+                >
+              </li>
+              <li>
+                <a href="home.html#about" class="text-gray nav-link"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="services.html" class="nav-link">Our Services</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-3">
+          <div class="text-center text-gray">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white fs-6 nav-link fw-bold"
+                  ><span>Contact Us</span></a
+                >
+              </li>
+              <li><a href="" class="text-gray nav-link">Instagram</a></li>
+              <li><a href="" class="text-gray nav-link">Gmail</a></li>
+              <li><a href="" class="text-gray nav-link">Instagram</a></li>
+              <li><a href="" class="text-gray nav-link"> Call</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="row">
         <div class="col-md-12">
-          <img
-            src="images/Frame 12.jpg"
-            alt="Your Image"
-            class="img-fluid footer-img"
-          />
+          <div class="text-center text-gray footer-text">
+            &copy; 2024 Hatinuda, All rights reserved.
+          </div>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="text-md-left text-white main-text">
-          <h1>
-            "Our Agency Is Founded On The Principle Of Authenticity, Originality
-            And A Deep Understanding Of Our Clients' Unique Needs. We Are
-            Committed To Providing Creative Solutions That Not Only Captivate
-            Audiences But Also Leave An Indelible Mark On The Cultural Fabric Of
-            Africa And Beyond. Our Agency Is Founded On The Principle Of
-            Authenticity, Originality And A Deep Understanding Of Our Clients'
-            Unique Needs. We Are Committed To Providing Creative Solutions That
-            Not Only Captivate Audiences But Also Leave An Indelible Mark On The
-            Cultural Fabric Of Africa And Beyond."
-          </h1>
-
-          <h5>Cornelius Ayanfe Adetutu</h5>
-          <p>CEO, MD</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-8">
-        <div class="contact-us">
-          <span class="text-blue"> Contact Us</span>
-          <h1>
-            Let Work<br />
-            <span class="text-gray"> Together</span>
-          </h1>
-          <div class="text-gray">
-            <p><i class="bi bi-envelope"></i> hatinudanetwork@Gmail.Com</p>
-            <p><i class="bi bi-instagram"></i> @hatinuda</p>
-            <p><i class="bi bi-telephone-fill"></i> +234 8145 577 1499</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <img src="images/Rectangle 8.jpg" class="img-fluid" alt="Image" />
-      </div>
-    </div>
-
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="text-md-left text-gray">
-              <b>Logo</b>
-              <p>
-                Hatinuda Is A Creative Agency That Provides The Best Specialized
-                Digital Creative Solution In Nigeria To Help Brands Achieve
-                Their Full Potential
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="text-center text-gray">
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#"><span>Home</span></a>
-                </li>
-                <li>About Us</li>
-                <li>Our Services</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="text-center text-gray">
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#"><span>Contact Us</span></a>
-                </li>
-                <li>Gmail</li>
-                <li>Instagram</li>
-                <li>Call</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="text-center text-gray footer-text">
-              &copy; 2024 Hatinuda, All rights reserved.
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script>
-      function showSidebar() {
-        const sidebar = document.querySelector(".sidebar");
-        sidebar.style.display = "flex";
-      }
-      function hideSidebar() {
-        const sidebar = document.querySelector(".sidebar");
-        sidebar.style.display = "none";
-      }
-    </script>
-  </body>
+  </footer>
+</body>
 </html>
+
