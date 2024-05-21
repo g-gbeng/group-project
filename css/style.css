@@ -260,6 +260,22 @@ nav a.active {
   float: right;
   font-size: 1.063rem;
 }
+.col3 {
+  width: 26.125rem;
+  padding: 0.625rem;
+  float: left;
+  text-align: right;
+}
+.col3 p {
+  font-size: 3rem;
+  color: #2f2f30;
+  font-weight: 600;
+}
+.col3 span {
+  font-size: 3rem;
+  color: #5b5b5c;
+  font-weight: 600;
+}
 .about-img img {
   height: 30rem;
   width: 90rem;
